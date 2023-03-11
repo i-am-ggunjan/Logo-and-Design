@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 10px;
+        }
+
+        .container {
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .leaf {
+            background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.832), rgb(0, 255, 0));
+            height: 20rem;
+            width: 19rem;
+
+            border: 0.5rem solid rgb(8, 249, 8);
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .stick {
+            background-color: rgb(10, 135, 10);
+            width: 40rem;
+            height: 0.3rem;
+            rotate: 46deg;
+            position: absolute;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leaf"></div>
+        <div class="stick"></div>
+    </div>
+</body>
+
+</html>

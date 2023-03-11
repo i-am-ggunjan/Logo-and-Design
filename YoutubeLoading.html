@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Loading</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .container {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            border-radius: 50%;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: loading 5s linear infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotateZ(0deg);
+                border-right: 4px solid grey;
+            }
+
+            25% {
+                transform: rotateZ(90deg);
+                border-right: 4px solid transparent;
+            }
+
+            50% {
+                transform: rotateZ(180deg);
+                border-right: 4px solid grey;
+            }
+
+            75% {
+                transform: rotateZ(270deg);
+                border-right: 4px solid transparent;
+
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+                border-right: 4px solid grey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+</body>
+
+</html>
